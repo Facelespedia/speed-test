@@ -1,2 +1,2 @@
-const speedTest = require('speedtest-net');
-
+console.log("test")
+console.log($('h1').text())
