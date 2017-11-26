@@ -8,6 +8,12 @@ a {
   color: #00B7FF;
 }
 
+.text-center{
+  text-align: center;
+  align-items: center;
+  justify-content: center;  
+}
+
 .head-color{
   color: white;
 }
