@@ -205,7 +205,7 @@ wrap = function(content){
       "pattern-size": null,
       "stroke-dir": 'normal',
       "stroke": '#25b',
-      "stroke-width": '3',
+      "stroke-width": '14',
       "stroke-trail": '#ddd',
       "stroke-trail-width": 0.5,
       "duration": 1,
@@ -712,8 +712,8 @@ out$.presets = presets = {
   line: {
     "type": 'stroke',
     "path": 'M10 10L90 10',
-    "stroke": '#25b',
-    "stroke-width": 3,
+    "stroke": '#b5ceff',
+    "stroke-width": 8,
     "stroke-trail": '#ddd',
     "stroke-trail-width": 1
   },
@@ -725,8 +725,8 @@ out$.presets = presets = {
     "fill-background": '#ddd',
     "fill-background-extrude": 3,
     "stroke-dir": 'normal',
-    "stroke": '#25b',
-    "stroke-width": '3',
+    "stroke": '#b5ceff',
+    "stroke-width": '8',
     "stroke-trail": '#ddd',
     "stroke-trail-width": 0.5
   },
@@ -738,8 +738,8 @@ out$.presets = presets = {
     "fill-background": '#ddd',
     "fill-background-extrude": 3,
     "stroke-dir": 'normal',
-    "stroke": '#25b',
-    "stroke-width": '3',
+    "stroke": '#b5ceff',
+    "stroke-width": '7',
     "stroke-trail": '#ddd',
     "stroke-trail-width": 0.5
   },

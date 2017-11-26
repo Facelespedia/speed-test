@@ -15,15 +15,24 @@ a {
   align-items: center;
   justify-content: center;  
 }
-
-.space-between-content{
-  margin-bottom: 10rem;
+.space-between-content-title{
+  margin-bottom: 6rem;
 }
-
+.space-between-content{
+  margin-bottom: 3rem;
+}
+.ldBar-label {
+  color:#eaf2ff;
+  font-size: 2.1em;
+  font-weight: 900;
+  text-shadow: 0 0 0px !important;
+}
 .head-color{
   color: white;
 }
-
+.text-detail-color{
+  color:#eaf2ff;
+}
 .test{
-  color: red;
+  color: ivory;
 }

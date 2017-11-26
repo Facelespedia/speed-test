@@ -2,18 +2,8 @@ extends layout
 
 block content
   center.head-color
-    h1 Welcome to #{title}
+    h1.space-between-content-title Welcome to #{title}
   block container
-    .row.text-center.space-between-content
-      .col-4
-        .test
-          h1 PING  
-      .col-4
-        .test
-          h1 DOWLOAD
-      .col-4
-        .test
-          h1 UPLOAD
     .row.text-center
       .col-6.text-white
         h4 IP ADDRESS
@@ -26,13 +16,24 @@ block content
         h5 165.167.2.143
     .row.text-center.space-between-content
       .col-4
-        .ldBar.label-center(style="width:50%;height:50%;margin:auto" data-value="35" data-preset="rainbow")
+        .test
+          h2 PING  
       .col-4
-        .ldBar.label-center(style="width:50%;height:50%;margin:auto" data-value="35" data-preset="circle")
+        .test
+          h2 DOWLOAD
       .col-4
-        .ldBar.label-center(style="width:50%;height:50%;margin:auto" data-value="35" data-preset="circle")
+        .test
+          h2 UPLOAD   
     .row.text-center.space-between-content
-      div#data Data    
+      .col-4.text-detail-color
+        h3 205 MS
+      .col-4
+        .ldBar.label-center(style="width:50%;height:50%;margin:auto" data-value="35" data-preset="circle")
+      .col-4
+        .ldBar.label-center(style="width:50%;height:50%;margin:auto" data-value="180" data-preset="circle")
     .row.text-center.space-between-content
       button#test.btn.btn-info Test 
+    .row.text-center.space-between-content
+      div#data Data    
+    
       
