@@ -4,7 +4,7 @@ block content
   center.head-color
     h1 Welcome to #{title}
   block container
-    .row.text-center
+    .row.text-center.space-between-content
       .col-4
         .test
           h1 PING  
@@ -14,7 +14,10 @@ block content
       .col-4
         .test
           h1 UPLOAD
-    .row.text-center
+    .row.text-center.space-between-content
       button.btn.btn-danger click me!
-      button#test Test 
+    .row.text-center.space-between-content
       div#data Data
+    .row.text-center.space-between-content
+      button#test.btn.btn-info Test 
+      

@@ -14,6 +14,10 @@ a {
   justify-content: center;  
 }
 
+.space-between-content{
+  margin-bottom: 10rem;
+}
+
 .head-color{
   color: white;
 }
