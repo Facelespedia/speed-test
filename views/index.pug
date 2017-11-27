@@ -1,41 +1,44 @@
 extends layout
 
 block content
-  center.head-color
-    h1.space-between-content-title Welcome to #{title}
+  center.head-color.header-main.space-between-content
+    h1.welcome-text Welcome to #{title}
   block container
-    .row.text-center
-      .col-6.text-white
-        h4 IP ADDRESS
-      .col-6.text-white
-        h4 IP SERVER
-    .row.text-center.space-between-content
-      .col-6.text-white
-        h5#ip_address -
-      .col-6.text-white
-        h5#server -
-    .row.text-center.space-between-content
-      .col-4
-        .test
-          h2 PING  
-      .col-4
-        .test
+    .row.text-center.d-flex.justify-content-around.space-between-content-main
+      .text-ip-head.d-flex.text-center.d-flex.flex-column.ip-box
+        .content-title.d-flex.space-below.d-flex
+          i(class="fa fa-street-view fa-2x space-title" aria-hidden="true")
+          h4 IP ADDRESS
+        .content-detail.text-ip
+          h5#ip_address -
+      .text-ip-head.d-flex.text-center.d-flex.flex-column.ip-box
+        .content-title.d-flex.space-below.d-flex
+          i(class="fa fa-building fa-2x space-title" aria-hidden="true")
+          h4 IP SERVER
+        .content-detail.text-ip
+          h5#server -  
+    .row.text-center.d-flex.justify-content-around.space-between-content-main
+      .d-flex.flex-column.speed-detail-box-ping
+        .test.d-flex.text-center.space-between-content
+          i(class="fa fa-rss fa-3x space-title color-ping" aria-hidden="true")
+          h2 PING
+        .text-center.text-detail-color
+          h3#ping 0 MS  
+      .d-flex.flex-column.speed-detail-box-download
+        .test.d-flex.text-center.space-between-content
+          i(class="fa fa-arrow-circle-o-down color-download fa-3x space-title" aria-hidden="true")
           h2 DOWLOAD
-      .col-4
-        .test
-          h2 UPLOAD   
+        .text-center.text-detail-color
+          h3#download 0 Mbps
+      .d-flex.flex-column.speed-detail-box-upload
+        .test.d-flex.text-center.space-between-content
+          i(class="fa fa-arrow-circle-o-up color-upload  fa-3x space-title" aria-hidden="true")
+          h2 UPLOAD
+        .text-center.text-detail-color
+           h3#upload 0 Mbps
     .row.text-center.space-between-content
-      .col-4.text-detail-color
-        h3#ping 0 MS
-      .col-4
-        .ldBar.label-center(style="width:50%;height:50%;margin:auto" data-value="0" data-preset="circle")
-        h2#download 0 Mbps
-      .col-4
-        .ldBar.label-center(style="width:50%;height:50%;margin:auto" data-value="0" data-preset="circle")
-        h2#upload 0 Mbps
-    .row.text-center.space-between-content
-      button#test.btn.btn-info Test
-      h2#wait Wait a minute 
+      button#test.btn.btn-info.btn-test(href="#") TEST
+      h2#wait.text-white Wait a minute 
     .row.text-center.space-between-content
     
       

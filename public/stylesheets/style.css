@@ -1,14 +1,81 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: #475e84
+  background: #222D40;
+  font-family: 'Ropa Sans', sans-serif;
 }
-
+.header-main{
+  padding: 3rem;
+  background: #455B7F;
+}
+.btn-test{
+  width: 20rem;
+  min-width: 15rem;
+  min-height: 3rem;
+  height: 5rem;
+  font-size: 1.25rem;
+  border-radius: 4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.welcome-text{
+  font-family: 'Hammersmith One', sans-serif;
+  color : #D6E5FF;
+}
+.ip-box{
+  background:#6B737F;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+.speed-detail-box-ping{
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #ffb184;
+  min-width: 20rem;
+}
+.speed-detail-box-download{
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #7ce4cd;
+  min-width: 20rem;
+}
+.speed-detail-box-upload{
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #f5a3ff;
+  min-width: 20rem;
+}
 a {
   color: #00B7FF;
 }
 .text-white{
   color: white;
+}
+.text-ip-head{
+  color: #d9e1ff;
+}
+h4{
+  margin-bottom: 0px;
+}
+h2{
+  margin-bottom: 0px;
+}
+.space-below{
+  margin-bottom: 0.6rem;
+}
+.space-title{
+  margin-right: 0.5rem;
+}
+.color-download{
+  color: #7ce4cd;
+}
+.color-upload{
+  color: #f5a3ff;
+}
+.color-ping{
+  color:#ffb184;
+}
+.text-ip{
+  color: #b7c5ff;
 }
 .text-center{
   text-align: center;
@@ -21,9 +88,12 @@ a {
 .space-between-content{
   margin-bottom: 3rem;
 }
+.space-between-content-main{
+  margin-bottom: 9rem;
+}
 .ldBar-label {
   color:#eaf2ff;
-  font-size: 2.1em;
+  font-size: 1.5em;
   font-weight: 900;
   text-shadow: 0 0 0px !important;
 }
