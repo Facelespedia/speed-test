@@ -15,6 +15,7 @@ body {
   font-size: 1.25rem;
   border-radius: 4rem;
   font-weight: bold;
+  cursor: pointer;
 }
 .welcome-text{
   font-family: 'Hammersmith One', sans-serif;
