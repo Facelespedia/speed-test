@@ -18,9 +18,9 @@ $('#test').on('click', function() {
 			}else {
 				$('#server').text("" + _data.sponsor + " " + _data.location + " " + _data.country)
 				$('#ping').text(_data.ping + " MS")
-				$('#ip_address').text(_data.ip + "\n" + _data.isp)
-				$("#upload").text(_data.uploadspeed + " Mbps")
-				$("#download").text(_data.downloadspeed + " Mbps")										
+				$('#ip_address').text(_data.ip + " " + _data.isp)
+				$("#upload").text(_data.uploadspeed.toFixed(2) + " Mbps")
+				$("#download").text(_data.downloadspeed.toFixed(2) + " Mbps")										
 			}
 		}
 	});
