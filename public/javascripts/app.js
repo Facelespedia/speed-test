@@ -1,4 +1,7 @@
+$('#wait').hide()									
 $('#test').on('click', function() {
+	$('#test').hide()
+	$('#wait').show()
 	$.ajax({
 		url: '/api/data',
 		success: function(data){
@@ -20,7 +23,9 @@ $('#test').on('click', function() {
 				$('#ping').text(_data.ping + " MS")
 				$('#ip_address').text(_data.ip + " " + _data.isp)
 				$("#upload").text(_data.uploadspeed.toFixed(2) + " Mbps")
-				$("#download").text(_data.downloadspeed.toFixed(2) + " Mbps")										
+				$("#download").text(_data.downloadspeed.toFixed(2) + " Mbps")	
+				$('#test').show()
+				$('#wait').hide()													
 			}
 		}
 	});
