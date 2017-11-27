@@ -1,8 +1,39 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  button#test Test 
-  div#data Data
-
+  center.head-color
+    h1.space-between-content-title Welcome to #{title}
+  block container
+    .row.text-center
+      .col-6.text-white
+        h4 IP ADDRESS
+      .col-6.text-white
+        h4 IP SERVER
+    .row.text-center.space-between-content
+      .col-6.text-white
+        h5 192.168.1.145
+      .col-6.text-white
+        h5 165.167.2.143
+    .row.text-center.space-between-content
+      .col-4
+        .test
+          h2 PING  
+      .col-4
+        .test
+          h2 DOWLOAD
+      .col-4
+        .test
+          h2 UPLOAD   
+    .row.text-center.space-between-content
+      .col-4.text-detail-color
+        h3 205 MS
+      .col-4
+        .ldBar.label-center(style="width:50%;height:50%;margin:auto" data-value="35" data-preset="circle")
+      .col-4
+        .ldBar.label-center(style="width:50%;height:50%;margin:auto" data-value="180" data-preset="circle")
+    .row.text-center.space-between-content
+      button#test.btn.btn-info Test 
+    .row.text-center.space-between-content
+      div#data Data    
+    
+      
