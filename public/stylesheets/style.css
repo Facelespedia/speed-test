@@ -10,6 +10,33 @@ a {
 .text-white{
   color: white;
 }
+.text-ip-head{
+  color: #bcc9ff;
+}
+h4{
+  margin-bottom: 0px;
+}
+h2{
+  margin-bottom: 0px;
+}
+.space-below{
+  margin-bottom: 0.6rem;
+}
+.space-title{
+  margin-right: 0.5rem;
+}
+.color-download{
+  color: #7ce4cd;
+}
+.color-upload{
+  color: #f5a3ff;
+}
+.color-ping{
+  color:#ffb184;
+}
+.text-ip{
+  color: #909cce;
+}
 .text-center{
   text-align: center;
   align-items: center;
@@ -19,7 +46,10 @@ a {
   margin-bottom: 6rem;
 }
 .space-between-content{
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+}
+.space-between-content-main{
+  margin-bottom: 12rem;
 }
 .ldBar-label {
   color:#eaf2ff;

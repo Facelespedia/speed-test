@@ -4,36 +4,41 @@ block content
   center.head-color
     h1.space-between-content-title Welcome to #{title}
   block container
-    .row.text-center
-      .col-6.text-white
+    .row.text-center.space-below
+      .col-6.text-ip-head.d-flex.text-center
+        i(class="fa fa-street-view fa-2x space-title" aria-hidden="true")
         h4 IP ADDRESS
-      .col-6.text-white
+      .col-6.text-ip-head.d-flex.text-center
+        i(class="fa fa-building fa-2x space-title" aria-hidden="true")
         h4 IP SERVER
-    .row.text-center.space-between-content
-      .col-6.text-white
+    .row.text-center.space-between-content-main
+      .col-6.text-ip
         h5 192.168.1.145
-      .col-6.text-white
+      .col-6.text-ip
         h5 165.167.2.143
     .row.text-center.space-between-content
       .col-4
-        .test
+        .test.d-flex.text-center
+          i(class="fa fa-rss fa-3x space-title color-ping" aria-hidden="true")
           h2 PING  
       .col-4
-        .test
+        .test.d-flex.text-center
+          i(class="fa fa-arrow-circle-o-down color-download fa-3x space-title" aria-hidden="true")
           h2 DOWLOAD
       .col-4
-        .test
+        .test.d-flex.text-center
+          i(class="fa fa-arrow-circle-o-up color-upload  fa-3x space-title" aria-hidden="true")
           h2 UPLOAD   
-    .row.text-center.space-between-content
+    .row.text-center.space-between-content-main
       .col-4.text-detail-color.text-center
         .row.text-center
-          .ldBar.label-center(style="width:50%;height:50%;margin:auto" data-value="35" data-preset="energy")
-        .row.text-center
           h3 205 MS
-      .col-4
-        .ldBar.label-center(style="width:50%;height:50%;margin:auto" data-value="35" data-preset="circle")
-      .col-4
-        .ldBar.label-center(style="width:50%;height:50%;margin:auto" data-value="180" data-preset="circle")
+      .col-4.text-detail-color.text-center
+        .row.text-center
+          h3 20 MB
+      .col-4.text-detail-color.text-center
+        .row.text-center
+          h3 20 MB
     .row.text-center.space-between-content
       button#test.btn.btn-info Test 
     .row.text-center.space-between-content
