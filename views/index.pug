@@ -11,9 +11,9 @@ block content
         h4 IP SERVER
     .row.text-center.space-between-content
       .col-6.text-white
-        h5 192.168.1.145
+        h5#ip_address -
       .col-6.text-white
-        h5 165.167.2.143
+        h5#server -
     .row.text-center.space-between-content
       .col-4
         .test
@@ -26,14 +26,15 @@ block content
           h2 UPLOAD   
     .row.text-center.space-between-content
       .col-4.text-detail-color
-        h3 205 MS
+        h3#ping 0 MS
       .col-4
-        .ldBar.label-center(style="width:50%;height:50%;margin:auto" data-value="35" data-preset="circle")
+        .ldBar.label-center(style="width:50%;height:50%;margin:auto" data-value="0" data-preset="circle")
+        h2#download 0 Mbps
       .col-4
-        .ldBar.label-center(style="width:50%;height:50%;margin:auto" data-value="180" data-preset="circle")
+        .ldBar.label-center(style="width:50%;height:50%;margin:auto" data-value="0" data-preset="circle")
+        h2#upload 0 Mbps
     .row.text-center.space-between-content
       button#test.btn.btn-info Test 
     .row.text-center.space-between-content
-      div#data Data    
     
       
