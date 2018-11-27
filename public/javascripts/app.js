@@ -12,7 +12,9 @@ $('#go').on('click', function() {
 			}else {
 				$('#server').text(_data.sponsor + " " + _data.location + " " + _data.country)
         $('#ip_address').text(_data.ip + " " + _data.isp)
-        $('#ping').text(_data.ping + " MS")									
+        $('#ping').text(_data.ping + " MS")
+        $("#download").text(_data.downloadspeed.toFixed(2) + " Mbps")
+        $("#upload").text(_data.uploadspeed.toFixed(2) + " Mbps")							
 			}
   	}
 	}).then(function() {
