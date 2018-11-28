@@ -1,6 +1,11 @@
 $('#go').on('click', function() {
   $('#go').attr("disabled", true)
-	$('#go').text("Wait")  
+  $('#go').text("Wait")
+  $('#server').text('-')
+  $('#ip_address').text('-')
+  $('#ping').text('-')
+  $("#download").text('-')
+  $("#upload").text('-')
 	$.ajax({
 		url: '/api/data',
 		success: function(data){
@@ -14,7 +19,7 @@ $('#go').on('click', function() {
         $('#ip_address').text(_data.ip + " " + _data.isp)
         $('#ping').text(_data.ping + " MS")
         $("#download").text(_data.downloadspeed.toFixed(2) + " Mbps")
-        $("#upload").text(_data.uploadspeed.toFixed(2) + " Mbps")							
+        $("#upload").text(_data.uploadspeed.toFixed(2) + " Mbps")
 			}
   	}
 	}).then(function() {
